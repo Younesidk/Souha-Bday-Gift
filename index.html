@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Happy Birthday Souha</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <style>
+        :root {
+            --sage-green: #9cac75;
+            --soft-blush: #fcdbdc;
+            --rose-pink: #f48b96;
+            --cream: #fffcf9;
+            --rich-rose: #b85461;
+        }
+
+        body {
+            scroll-behavior: smooth;
+            background-color: var(--cream);
+        }
+
+        /* Vibrant Gradient Transitions */
+        .gradient-to-message {
+            background: linear-gradient(to bottom, var(--cream), #f2f5e9);
+        }
+
+        .gradient-to-journey {
+            background: linear-gradient(to bottom, #f2f5e9, var(--cream));
+        }
+
+        .gradient-to-video {
+            background: linear-gradient(to bottom, var(--cream), #fff5f6);
+        }
+
+        .gradient-to-final {
+            background: linear-gradient(to bottom, #fff5f6, var(--soft-blush));
+        }
+
+        /* Enhanced Floating Petals */
+        .petal {
+            position: fixed;
+            top: -10%;
+            user-select: none;
+            pointer-events: none;
+            z-index: 99;
+            animation-name: fall;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            filter: drop-shadow(0px 4px 6px rgba(244, 139, 150, 0.4));
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(0vh) rotate(0deg) scale(0.8); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(110vh) rotate(360deg) scale(1.2); opacity: 0; }
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Text Glow */
+        .glow-text {
+            text-shadow: 0 4px 15px rgba(184, 84, 97, 0.2);
+        }
+    </style>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "var(--rich-rose)",
+                        "secondary": "var(--rose-pink)",
+                        "tertiary": "#7a5c61",
+                        "background": "var(--cream)",
+                    },
+                    fontFamily: {
+                        "headline": ["Libre Caslon Text", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body antialiased overflow-x-hidden">
+
+<div id="petals-container"></div>
+
+<section class="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-background">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,139,150,0.05)_0%,transparent_50%)]"></div>
+
+    <div class="relative z-10 text-center flex flex-col items-center">
+        <h1 class="font-headline text-7xl md:text-9xl text-primary italic mb-6 glow-text">Souha</h1>
+        <p class="text-secondary tracking-[0.3em] uppercase text-sm font-semibold">Every petal reminds me of you</p>
+    </div>
+    
+    <div class="absolute bottom-10 left-0 right-0 w-full text-center flex flex-col items-center gap-3 animate-bounce z-20">
+        <span class="text-xs text-tertiary uppercase tracking-widest font-semibold">scroll to begin</span>
+        <span class="material-symbols-outlined text-tertiary" data-icon="arrow_downward">expand_more</span>
+    </div>
+</section>
+
+<section class="gradient-to-message py-32 px-6 relative z-10">
+    <div class="max-w-2xl mx-auto text-center space-y-10">
+        <span class="text-5xl drop-shadow-md">🌷</span>
+        <div class="space-y-6 bg-white/40 backdrop-blur-md p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.02)] border border-white/50">
+            <h2 class="font-headline text-4xl text-primary italic">My Dearest Souha,</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Happy Birthday to the most beautiful soul. Every moment with you feels like a soft spring morning. Your laugh brings warmth to my coldest days, and your kindness inspires me to be better.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                May this year bring you as much joy and beauty as you bring into the world. You deserve all the tulips in Holland and all the stars in the sky.
+            </p>
+        </div>
+        <span class="text-5xl drop-shadow-md block rotate-180">🌷</span>
+    </div>
+</section>
+
+<section class="gradient-to-journey py-32 px-6">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-headline text-5xl text-primary italic mb-6 glow-text">Our Journey</h2>
+            <div class="w-20 h-1 rounded-full bg-secondary mx-auto opacity-50"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-rose-50 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3">
+                <div class="aspect-[4/5] bg-gray-100 rounded-2xl mb-5 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=500" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                </div>
+                <p class="font-headline italic text-center text-tertiary text-lg">The first time I saw that smile.</p>
+            </div>
+            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-rose-50 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 md:mt-12">
+                <div class="aspect-[4/5] bg-gray-100 rounded-2xl mb-5 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1516589174184-c68536575960?auto=format&fit=crop&w=500" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                </div>
+                <p class="font-headline italic text-center text-tertiary text-lg">Coffee and endless conversations.</p>
+            </div>
+            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-rose-50 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 lg:mt-24">
+                <div class="aspect-[4/5] bg-gray-100 rounded-2xl mb-5 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                </div>
+                <p class="font-headline italic text-center text-tertiary text-lg">Walking towards our future.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gradient-to-video py-32 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="font-headline text-4xl text-tertiary italic mb-12">A moment I never want to forget</h2>
+        <div class="aspect-video bg-white/60 backdrop-blur-md rounded-[2.5rem] p-4 shadow-[0_20px_50px_rgba(244,139,150,0.15)] border border-white relative group">
+             <div class="w-full h-full bg-gray-100 rounded-[2rem] flex items-center justify-center overflow-hidden relative">
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518134346374-184f9d21cb2c?auto=format&fit=crop&w=800')] bg-cover bg-center opacity-40 mix-blend-multiply"></div>
+                <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-lg z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                    <span class="material-symbols-outlined text-4xl text-white">play_arrow</span>
+                </div>
+             </div>
+        </div>
+    </div>
+</section>
+
+<section class="gradient-to-final min-h-screen flex flex-col items-center justify-center px-6 text-center relative overflow-hidden">
+    <div class="absolute top-0 w-full h-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.8)_0%,transparent_100%)] z-0"></div>
+    
+    <div class="max-w-2xl space-y-14 relative z-10">
+        <p class="font-headline text-3xl md:text-4xl text-tertiary italic leading-loose">
+            "In all the world, there is no heart for me like yours. <br/>In all the world, there is no love for you like mine."
+        </p>
+        <div class="space-y-6">
+            <h3 class="font-headline text-5xl md:text-7xl text-primary glow-text">Happy Birthday Souha 🌷</h3>
+            <div class="w-12 h-1 rounded-full bg-primary mx-auto opacity-50 mb-4"></div>
+            <p class="font-body tracking-[0.4em] text-sm text-primary font-semibold">FOREVER YOURS</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Enhanced Petal Animation Script
+    const shapes = ['🌸', '🌷', '✨', '🌸']; 
+
+    function createPetal() {
+        const petal = document.createElement('div');
+        petal.classList.add('petal');
+        petal.innerHTML = shapes[Math.floor(Math.random() * shapes.length)];
+        petal.style.left = Math.random() * 100 + 'vw';
+        petal.style.animationDuration = Math.random() * 4 + 3 + 's'; // Slower, more elegant fall
+        
+        // Randomize size slightly
+        const size = Math.random() * 12 + 14;
+        petal.style.fontSize = size + 'px';
+        
+        // Randomize initial rotation and horizontal drift
+        petal.style.setProperty('--drift', (Math.random() * 200 - 100) + 'px');
+        
+        document.getElementById('petals-container').appendChild(petal);
+
+        setTimeout(() => {
+            petal.remove();
+        }, 7000);
+    }
+
+    // Gentle interval for a natural feel
+    setInterval(createPetal, 400);
+</script>
+
+</body>
+</html>
