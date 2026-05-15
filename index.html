@@ -12,7 +12,9 @@
     
     <style>
         :root {
-            --sage-green: #9cac75;
+            /* Updated Palette with Light Green */
+            --sage-green: #aab382;
+            --light-green: #e9f0d9; /* Soft, warm tulip-stem green */
             --soft-blush: #fcdbdc;
             --rose-pink: #f48b96;
             --cream: #fffcf9;
@@ -24,21 +26,25 @@
             background-color: var(--cream);
         }
 
-        /* Vibrant Gradient Transitions */
+        /* New Light Green & Pink Gradient Transitions */
         .gradient-to-message {
-            background: linear-gradient(to bottom, var(--cream), #f2f5e9);
+            /* Cream melting into Light Green */
+            background: linear-gradient(to bottom, var(--cream), var(--light-green));
         }
 
         .gradient-to-journey {
-            background: linear-gradient(to bottom, #f2f5e9, var(--cream));
+            /* Light Green holding steady, fading slightly to a paler green */
+            background: linear-gradient(to bottom, var(--light-green), #f2f5e9);
         }
 
         .gradient-to-video {
-            background: linear-gradient(to bottom, var(--cream), #fff5f6);
+            /* Pale green transitioning smoothly into soft pink */
+            background: linear-gradient(to bottom, #f2f5e9, #fff0f1);
         }
 
         .gradient-to-final {
-            background: linear-gradient(to bottom, #fff5f6, var(--soft-blush));
+            /* Soft pink blooming into full soft blush */
+            background: linear-gradient(to bottom, #fff0f1, var(--soft-blush));
         }
 
         /* Enhanced Floating Petals */
@@ -111,7 +117,7 @@
 <section class="gradient-to-message py-32 px-6 relative z-10">
     <div class="max-w-2xl mx-auto text-center space-y-10">
         <span class="text-5xl drop-shadow-md">🌷</span>
-        <div class="space-y-6 bg-white/40 backdrop-blur-md p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.02)] border border-white/50">
+        <div class="space-y-6 bg-white/50 backdrop-blur-md p-8 rounded-3xl shadow-[0_8px_30px_rgb(170,179,130,0.1)] border border-white/60">
             <h2 class="font-headline text-4xl text-primary italic">My Dearest Souha,</h2>
             <p class="text-lg text-gray-700 leading-relaxed">
                 Happy Birthday to the most beautiful soul. Every moment with you feels like a soft spring morning. Your laugh brings warmth to my coldest days, and your kindness inspires me to be better.
@@ -132,19 +138,19 @@
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-rose-50 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3">
+            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-white hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3">
                 <div class="aspect-[4/5] bg-gray-100 rounded-2xl mb-5 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=500" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
                 </div>
                 <p class="font-headline italic text-center text-tertiary text-lg">The first time I saw that smile.</p>
             </div>
-            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-rose-50 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 md:mt-12">
+            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-white hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 md:mt-12">
                 <div class="aspect-[4/5] bg-gray-100 rounded-2xl mb-5 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1516589174184-c68536575960?auto=format&fit=crop&w=500" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
                 </div>
                 <p class="font-headline italic text-center text-tertiary text-lg">Coffee and endless conversations.</p>
             </div>
-            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-rose-50 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 lg:mt-24">
+            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-white hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 lg:mt-24">
                 <div class="aspect-[4/5] bg-gray-100 rounded-2xl mb-5 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
                 </div>
