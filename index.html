@@ -10,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
-
-    
     <style>
         :root {
             /* Updated Palette with Light Green */
@@ -120,12 +118,12 @@
     <div class="max-w-2xl mx-auto text-center space-y-10">
         <span class="text-5xl drop-shadow-md">🌷</span>
         <div class="space-y-6 bg-white/50 backdrop-blur-md p-8 rounded-3xl shadow-[0_8px_30px_rgb(170,179,130,0.1)] border border-white/60">
-            <h2 class="font-headline text-4xl text-primary italic">My Dearest Souha,</h2>
+            <h2 class="font-headline text-4xl text-primary italic">Habibti Souha</h2>
             <p class="text-lg text-gray-700 leading-relaxed">
-                Happy Birthday to the most beautiful soul. Every moment with you feels like a soft spring morning. Your laugh brings warmth to my coldest days, and your kindness inspires me to be better.
+                Happy Birthday to the Prettiest Girl in the World , may everyday be the best for you , i wanted to Thank you for your existence in this beloved world , and i wanted to thank you for everything you have ever done to me before , you took care of me like no one else . i love you <3 
             </p>
             <p class="text-lg text-gray-700 leading-relaxed">
-                May this year bring you as much joy and beauty as you bring into the world. You deserve all the tulips in Holland and all the stars in the sky.
+                May this year be your greatest year ever , may god make you the happiest princess of all time , may god protect you from all evil , may god make you succesfull in your life
             </p>
         </div>
         <span class="text-5xl drop-shadow-md block rotate-180">🌷</span>
@@ -142,21 +140,21 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-white hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3">
                 <div class="aspect-[4/5] bg-gray-100 rounded-2xl mb-5 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=500" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                    <img src="assets/Souha1.JPG" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
                 </div>
-                <p class="font-headline italic text-center text-tertiary text-lg">The first time I saw that smile.</p>
+                <p class="font-headline italic text-center text-tertiary text-lg">our first selife <3 </p>
             </div>
             <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-white hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 md:mt-12">
                 <div class="aspect-[4/5] bg-gray-100 rounded-2xl mb-5 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1516589174184-c68536575960?auto=format&fit=crop&w=500" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                    <img src="assets/Souha2.JPG" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
                 </div>
-                <p class="font-headline italic text-center text-tertiary text-lg">Coffee and endless conversations.</p>
+                <p class="font-headline italic text-center text-tertiary text-lg">perfect smile</p>
             </div>
             <div class="bg-white/80 backdrop-blur-sm p-5 rounded-3xl shadow-lg border border-white hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 lg:mt-24">
                 <div class="aspect-[4/5] bg-gray-100 rounded-2xl mb-5 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                    <img src="assets/Souha3.JPG" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
                 </div>
-                <p class="font-headline italic text-center text-tertiary text-lg">Walking towards our future.</p>
+                <p class="font-headline italic text-center text-tertiary text-lg">our car rides</p>
             </div>
         </div>
     </div>
@@ -164,13 +162,24 @@
 
 <section class="gradient-to-video py-32 px-6">
     <div class="max-w-4xl mx-auto text-center">
-        <h2 class="font-headline text-4xl text-tertiary italic mb-12">A moment I never want to forget</h2>
-        <div class="aspect-video bg-white/60 backdrop-blur-md rounded-[2.5rem] p-4 shadow-[0_20px_50px_rgba(244,139,150,0.15)] border border-white relative group">
+        <h2 class="font-headline text-4xl text-tertiary italic mb-12">Thank you for everything you've done for me <3 </h2>
+        
+        <div class="max-w-sm aspect-[9/16] mx-auto bg-white/60 backdrop-blur-md rounded-[2.5rem] p-4 shadow-[0_20px_50px_rgba(244,139,150,0.15)] border border-white relative group">
              <div class="w-full h-full bg-gray-100 rounded-[2rem] flex items-center justify-center overflow-hidden relative">
-                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518134346374-184f9d21cb2c?auto=format&fit=crop&w=800')] bg-cover bg-center opacity-40 mix-blend-multiply"></div>
-                <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-lg z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
-                    <span class="material-symbols-outlined text-4xl text-white">play_arrow</span>
+                
+                <video id="souhaVideo" class="w-full h-full object-cover hidden" controls playsinline>
+                    <source src="assets/Souha-Birthday-Edit.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div id="videoOverlay" class="absolute inset-0 flex items-center justify-center cursor-pointer" onclick="startBirthdayVideo()">
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518134346374-184f9d21cb2c?auto=format&fit=crop&w=800')] bg-cover bg-center opacity-40 mix-blend-multiply"></div>
+                    
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-lg z-10 hover:scale-110 transition-transform duration-300">
+                        <span class="material-symbols-outlined text-4xl text-white">play_arrow</span>
+                    </div>
                 </div>
+
              </div>
         </div>
     </div>
@@ -200,13 +209,10 @@
         petal.classList.add('petal');
         petal.innerHTML = shapes[Math.floor(Math.random() * shapes.length)];
         petal.style.left = Math.random() * 100 + 'vw';
-        petal.style.animationDuration = Math.random() * 4 + 3 + 's'; // Slower, more elegant fall
+        petal.style.animationDuration = Math.random() * 4 + 3 + 's'; 
         
-        // Randomize size slightly
         const size = Math.random() * 12 + 14;
         petal.style.fontSize = size + 'px';
-        
-        // Randomize initial rotation and horizontal drift
         petal.style.setProperty('--drift', (Math.random() * 200 - 100) + 'px');
         
         document.getElementById('petals-container').appendChild(petal);
@@ -216,8 +222,17 @@
         }, 7000);
     }
 
-    // Gentle interval for a natural feel
     setInterval(createPetal, 400);
+
+    function startBirthdayVideo() {
+        const video = document.getElementById('souhaVideo');
+        const overlay = document.getElementById('videoOverlay');
+        
+        video.classList.remove('hidden');
+        overlay.classList.add('hidden');
+        
+        video.play();
+    }
 </script>
 
 </body>
